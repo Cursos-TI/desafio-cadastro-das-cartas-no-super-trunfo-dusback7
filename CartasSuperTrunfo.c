@@ -1,46 +1,47 @@
 #include <stdio.h>
 
-   int main(){
+// Cadastro das cartas
 
-    ////// carta a
+// Carta A
+char estado_A = 'A';
+char codigo_A[4] = "A01";
+char nome_da_cidade_A[30] = "RIO DE JANEIRO";
+int populacao_A = 6748000;
+float area_A = 1200.25;
+float PIB_A = 300.50;
+int pontos_turisticos_A = 30;
 
-    char estadoA[50] = "Rio de Janeiro";
-    char códigoA [5] = "A01";
-    char nomeA[50] = "Rio de Janeiro";
-    float populacaoA = 16055174;
-    float areaA = 1.200;
-    double pibA = 300.50;
-    int pontos_turísticosA = 58;
+// Carta B
+char estado_B = 'B';
+char codigo_B[4] = "B01";
+char nome_da_cidade_B[20] = "SÃO PAULO";
+int populacao_B = 12325000;
+float area_B = 1521.11;
+float PIB_B = 699.28;
+int pontos_turisticos_B = 50;
 
+// Programa e exibição das cartas
+int main() {
+    printf("Super Trunfo de Cidades\n\n");
+    printf("O jogo contém duas cartas (A01 & B01)\n\n");
 
-    ////// carta b
+    // Exibindo a carta A
+    printf("CARTA A:\n");
+    printf("Código da cidade: %s\n", codigo_A);
+    printf("Nome da cidade: %s\n", nome_da_cidade_A);
+    printf("População: %d\n", populacao_A);
+    printf("Área: %.2f km²\n", area_A);
+    printf("PIB: %.2f bilhões\n", PIB_A);
+    printf("Pontos turísticos: %d\n\n", pontos_turisticos_A);
 
-    char estadoB[50] = "São Paulo";
-    char códigoB [5] = "A02";
-    char nomeB[50] = "São Paulo";
-    float populacaoB = 11451999;
-    float areaB = 1.521202;
-    double pibB = 2.719751;
-    int pontos_turísticosB = 30;
-
-    ///////// exibição dos dados das cartas /////////
-
-    printf("Estado 1: %s\n", estadoA);
-    printf("Código 1: %s\n", códigoA);
-    printf("Nome 1: %s\n", nomeA);
-    printf("População 1: %.2f\n", populacaoA);
-    printf("Área 1: %.2f\n", areaA);
-    printf("PIB 1: %.2f\n", pibA);
-    printf("Pontos turisticos 1: %d\n", pontos_turísticosA);
-
-    printf("Estado 2: %s\n", estadoB);    
-    printf("Código 2: %s\n", códigoB);
-    printf("Nome 2: %s\n", nomeB);    
-    printf("População 2: %.2f\n", populacaoB);
-    printf("Área 2: %.2f\n", areaB);
-    printf("PIB 2: %.2f\n", pibB);
-    printf("Pontos turisticos 2: %d\n", pontos_turísticosB);
+    // Exibindo a carta B
+    printf("CARTA B:\n");
+    printf("Código da cidade: %s\n", codigo_B);
+    printf("Nome da cidade: %s\n", nome_da_cidade_B);
+    printf("População: %d\n", populacao_B);
+    printf("Área: %.2f km²\n", area_B);
+    printf("PIB: %.2f bilhões\n", PIB_B);
+    printf("Pontos turísticos: %d\n", pontos_turisticos_B);
 
     return 0;
-
-   }
+}
